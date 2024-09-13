@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wasmi Algasim - Tech Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --text-color: #333;
+            --bg-color: #ecf0f1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--secondary-color);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        main {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .project-info {
+            padding: 1.5rem;
+        }
+
+        .project-info h2 {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+
+        .project-info p {
+            color: var(--text-color);
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-info .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tech-tag {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 0.2rem 0.5rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        .projects-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hi, I'm Wasmi</h1>
+        <p>Data Scientist, AI Developer and Automation Enthusiast. I mostly write code to facilate my life</p>
+    </header>
+    <main>
+        <p class="projects-intro">Here are some of my favorite projects!</p>
+        <div class="project-grid">
+            <div class="project-card">
+                <a href="https://wassmi.github.io/tldr-science/" target="_blank" rel="noopener">
+                    <img src="tldr-science.jpeg" alt="TLDR Science: Research Paper Summarizer">
+                    <div class="project-info">
+                        <h2>TLDR Science: Research Paper Summarizer</h2>
+                        <p>Project that aims to automate the summarization of scientific research papers into concise, easy-to-understand summaries sent directly to me via Whatsapp. Born out of a need to efficiently parse through autoimmunity research, TLDR Science leverages AI and programming to help focus on the big picture.</p>
+                        <p>The project includes a Chrome extension for easy text extraction, a Python backend for processing, and uses OpenAI GPT-4 for analysis. It generates PDF summaries and sends them via WhatsApp, streamlining the research review process.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Chrome Extension</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenAI API</span>
+                            <span class="tech-tag">WhatsApp API</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="https://wassmi.github.io/thothCode/" target="_blank" rel="noopener">
+                    <img src="thothCode.jpeg" alt="AI Project Generator">
+                    <div class="project-info">
+                        <h2>ThothCode: The multi-agent AI Project Generator</h2>
+                        <p>A web application that leverages multi-agent AI workflow to automatically generate project structures, code, and documentation based on user-provided objectives. This tool streamlines the project initialization process, saving time and providing a solid starting point for various coding projects.</p>
+                        <p>The best part is that all the code generated by the agents is output as code files. With a simple prompt, an entire project is coded and given to the user ready.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Multi-Agent</span>
+                            <span class="tech-tag">Web Development</span>
+                            <span class="tech-tag">Code Generation</span>
+                            <span class="tech-tag">Langchain</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
