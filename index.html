@@ -149,6 +149,30 @@ gen<!DOCTYPE html>
 .reading-item span:first-child {
   font-weight: bold;
 }
+        /* Mobile responsiveness */
+@media (max-width: 768px) {
+  .reading-list {
+    padding: 1rem;
+  }
+  .reading-item {
+    height: 32px; /* Slightly taller on mobile */
+    padding: 0 0.5rem;
+  }
+  .reading-item span {
+    font-size: 0.8rem; /* Smaller font size on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .reading-item {
+    flex-direction: column; /* Stack text vertically on smaller screens */
+    height: auto;
+    padding: 0.5rem;
+  }
+  .reading-item span {
+    margin-right: 0;
+  }
+}
     </style>
 </head>
 <body>
