@@ -125,18 +125,19 @@ gen<!DOCTYPE html>
 
 .reading-item {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  height: 28px; /* Adjust height to your liking */
+  height: 28px;
   padding: 0 1rem;
+  background-color: #fff;
   border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.2s ease;
 }
 
-.reading-item img {
-  width: 20px;
-  height: 20px;
-  margin-right: 1rem;
-  object-fit: cover;
-  border-radius: 2px;
+.reading-item:hover {
+  background-color: #f5f5f5;
 }
 
 .reading-item span {
@@ -209,16 +210,15 @@ gen<!DOCTYPE html>
             </div>
         </div>
         <div class="reading-list">
-  <div class="reading-item">
-    <img src="book1-cover.jpg" alt="Book 1">
+ <div class="reading-list">
+  <a href="https://example.com/book1" target="_blank" class="reading-item">
     <span>Book Title 1</span>
     <span>Author 1</span>
-  </div>
-  <div class="reading-item">
-    <img src="book2-cover.jpg" alt="Book 2">
+  </a>
+  <a href="https://example.com/book2" target="_blank" class="reading-item">
     <span>Book Title 2</span>
     <span>Author 2</span>
-  </div>
+  </a>
   <!-- Add more reading items here -->
 </div>
     </main>
