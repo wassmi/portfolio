@@ -116,6 +116,38 @@ gen<!DOCTYPE html>
     margin-bottom: 2rem;
     color: var(--secondary-color);
 }
+        .reading-list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 2rem;
+}
+
+.reading-item {
+  display: flex;
+  align-items: center;
+  height: 28px; /* Adjust height to your liking */
+  padding: 0 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.reading-item img {
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.reading-item span {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  margin-right: 1rem;
+}
+
+.reading-item span:first-child {
+  font-weight: bold;
+}
     </style>
 </head>
 <body>
@@ -176,6 +208,19 @@ gen<!DOCTYPE html>
                 </a>
             </div>
         </div>
+        <div class="reading-list">
+  <div class="reading-item">
+    <img src="book1-cover.jpg" alt="Book 1">
+    <span>Book Title 1</span>
+    <span>Author 1</span>
+  </div>
+  <div class="reading-item">
+    <img src="book2-cover.jpg" alt="Book 2">
+    <span>Book Title 2</span>
+    <span>Author 2</span>
+  </div>
+  <!-- Add more reading items here -->
+</div>
     </main>
 </body>
 </html>
